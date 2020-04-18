@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Noto+Sans:400,700&display=swap");
+
+:root {
+  --color-main: darkorange;
+  --color-navbar: #fefefef0;
+  font-size: calc(0.5em + 1vw);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: #fefefe;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-navbar);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1em solid darkorange;
+  flex-wrap: wrap;
+}
+
+#header-img {
+  height: 1.4em;
+  margin: 0.2em;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.2em;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+#started {
+  padding-top: 5em;
+  padding: 5em;
+}
+
+#form {
+  font-size: 0.7rem;
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#email {
+  font-size: 1em;
+  width: 18em;
+  padding: 0em 0.6em;
+  margin: 1em;
+  margin-top: 2em;
+  height: 3em;
+  border-radius: 30px;
+  border: 0.12em solid darkorange;
+}
+
+#submit {
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  height: 3em;
+  padding: 0em 2em;
+  margin: 1em;
+  margin-top: 2em;
+  font-weight: bold;
+  background: var(--color-main);
+  color: white;
+}
+
+h1 {
+  font-family: "Fira Sans";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em;
+}
+
+#features {
+  color: white;
+  background: var(--color-main);
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  width: 80vw;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+}
+
+.feature .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.feature i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  color: white;
+  display: block;
+}
+
+#how-it-works {
+  padding-bottom: 10em;
+}
+
+#video {
+  width: 50vw;
+  height: 25vw;
+}
+
+#pricing {
+  font-size: 0.8rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 10em;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid darkorange;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  margin: 2em;
+}
+
+.product h2 {
+  padding: 1em;
+  color: darkorange;
+  font-size: 2em;
+}
+
+.product-title {
+  background: darkorange;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  height: 2em;
+  width: 100%;
+}
+
+ol {
+  list-style: none;
+  padding: 1em;
+}
+
+button {
+  border-radius: 20px;
+  width: 10em;
+  background: darkorange;
+  color: white;
+  height: 3em;
+  font-weight: bold;
+  border: none;
+  margin: 1em;
+}
+
+footer {
+  font-size: 0.7rem;
+  width: 100%;
+  background: #202020;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  display: flex;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+svg {
+  margin: -1em 0em;
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+}
