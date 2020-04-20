@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Noto+Sans:400,700&display=swap");
 
 :root {
-  --color-main: darkorange;
-  --color-navbar: #fefefef0;
+  --color-main: rgb(98,67,170);
+  --color-navbar: #eeeeeefa;
+  --color-background: #eee;
+  --color-font: #222;
   font-size: calc(0.5em + 1vw);
 }
 
@@ -11,16 +13,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+
+ 
 }
 
 html,
 body {
   scroll-behavior: smooth;
   width: 100%;
-  background-color: #fefefe;
+  background-color: var(--color-background);
+  color: var(--color-font);
 }
 
 header {
+  font-size: 1rem;
   position: sticky;
   top: 0px;
   background-color: var(--color-navbar);
@@ -29,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.1em solid darkorange;
+  border-bottom: 0.1em solid var(--color-main);
   flex-wrap: wrap;
 }
 
@@ -42,8 +48,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 0.2em;
-  font-size: 0.8rem;
+
+  font-size: 1em;
   font-weight: bold;
+}
+
+#nav-bar a {
+  font-size: 0.7em;
 }
 
 ul {
@@ -58,7 +69,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--color-font);
 }
 
 section {
@@ -71,7 +82,7 @@ section {
 
 #started {
   padding-top: 5em;
-  padding: 5em;
+  padding: 2em;
 }
 
 #form {
@@ -90,7 +101,7 @@ section {
   margin-top: 2em;
   height: 3em;
   border-radius: 30px;
-  border: 0.12em solid darkorange;
+  border: 0.12em solid var(--color-main);
 }
 
 #submit {
@@ -118,6 +129,7 @@ h1 {
   color: white;
   background: var(--color-main);
   width: 100%;
+  font-size: 1rem;
 }
 
 .feature {
@@ -125,6 +137,7 @@ h1 {
   width: 80vw;
   font-size: 0.8rem;
   justify-content: flex-start;
+  
 }
 
 .feature .desc {
@@ -144,7 +157,7 @@ h1 {
 }
 
 #how-it-works {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
 }
 
 #video {
@@ -156,7 +169,7 @@ h1 {
   font-size: 0.8rem;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   padding-bottom: 10em;
 }
@@ -164,22 +177,25 @@ h1 {
 .product {
   display: flex;
   flex-direction: column;
-  border: 0.1em solid darkorange;
+  border: 0.1em solid var(--color-main);
   text-align: center;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
-  width: 20em;
-  margin: 2em;
+  width: 23em;
+  margin: 1em;
+  border-radius: 1em;
+ 
+  font-size: 0.8rem;
 }
 
 .product h2 {
   padding: 1em;
-  color: darkorange;
+  color: var(--color-main);
   font-size: 2em;
 }
 
 .product-title {
-  background: darkorange;
+  background: var(--color-main);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -188,6 +204,7 @@ h1 {
   color: white;
   height: 2em;
   width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 ol {
@@ -198,16 +215,17 @@ ol {
 button {
   border-radius: 20px;
   width: 10em;
-  background: darkorange;
+  background: var(--color-main);
   color: white;
   height: 3em;
   font-weight: bold;
   border: none;
   margin: 1em;
+  font-size: 1em;
 }
 
 footer {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   width: 100%;
   background: #202020;
   align-items: center;
@@ -215,10 +233,12 @@ footer {
   padding: 1em;
   display: flex;
   color: white;
+  background-color: var(--color-main);
 }
 
 footer a {
   color: white;
+
 }
 
 svg {
